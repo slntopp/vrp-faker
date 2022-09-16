@@ -7,7 +7,9 @@ type Plate struct {
 	Number  string
 }
 
-const LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 "
+const CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+const ALPHANUMERICAL = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+const NUMERICAL = "0123456789"
 
 type Generator func() Plate
 
@@ -21,4 +23,9 @@ func StringWithCharset(length int, charset string) string {
 
 func String(length int, letters string) string {
 	return StringWithCharset(length, letters)
+}
+
+var Generators = map[string]Generator{
+	"BY": BY,
+	"DE": DE,
 }

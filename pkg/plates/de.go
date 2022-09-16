@@ -14,9 +14,9 @@ var DE_REGION_CHOOSER, _ = wr.NewChooser(
 
 func DE() Plate {
 	l := rand.Intn(3) + 6
-	number := String(DE_REGION_CHOOSER.Pick(), "ABCDEFGHIJKLMNOPQRSTUVWXYZ")
+	number := String(DE_REGION_CHOOSER.Pick(), CHARS)
 	number += " "
-	number += String(l-len(number), LETTERS)
+	number += String(l-len(number), ALPHANUMERICAL)
 
 	return Plate{
 		Country: "D",
