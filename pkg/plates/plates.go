@@ -26,6 +26,7 @@ func String(length int, letters string) string {
 }
 
 var Generators = map[string]Generator{
+	"B":  B,
 	"BY": BY,
 	"DE": DE,
 }
