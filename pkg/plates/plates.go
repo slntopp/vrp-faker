@@ -8,6 +8,7 @@ type Plate struct {
 }
 
 const CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+const CROSSING = "ABCEHIKMOPTXY" // Chars which are common between latin and cyrillic
 const ALPHANUMERICAL = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 const NUMERICAL = "0123456789"
 
@@ -30,4 +31,5 @@ var Generators = map[string]Generator{
 	"BY": BY,
 	"DE": DE,
 	"NL": NL,
+	"UA": UA,
 }
