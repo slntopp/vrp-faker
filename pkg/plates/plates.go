@@ -25,11 +25,3 @@ func StringWithCharset(length int, charset string) string {
 func String(length int, letters string) string {
 	return StringWithCharset(length, letters)
 }
-
-var Generators = map[string]Generator{
-	"B":  B,
-	"BY": BY,
-	"DE": DE,
-	"NL": NL,
-	"UA": UA,
-}

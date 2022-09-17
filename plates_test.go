@@ -1,4 +1,4 @@
-package plates
+package vrp
 
 import (
 	"testing"
